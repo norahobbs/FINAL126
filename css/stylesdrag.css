@@ -162,6 +162,11 @@ h2{
     object-fit: cover;
   }
 
+  .dragintro{
+    justify-self: center;
+    align-self: center;
+  }
+
   .watch{
     width: 50%;
   }
