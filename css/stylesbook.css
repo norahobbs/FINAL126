@@ -1,0 +1,178 @@
+.demo{
+    background-color: rgb(255, 255, 205);
+    color: rgb(81, 36, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button{
+    background-color: rgb(81, 36, 1);
+    color:  rgb(248, 248, 168);
+}
+
+.button:hover, .button:focus{
+    color: rgb(81, 36, 1);
+    background-color:  rgb(248, 248, 168);
+    text-decoration: underline;
+}
+
+
+.close{
+    color: rgb(81, 36, 1);
+    font-size: small;
+}
+
+.page-title {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    font-size: xx-large;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgba(53, 24, 1, 0.527);
+    margin-bottom: 0px;
+
+}
+
+.bookcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.bookgallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.book {
+    width: 50vh;
+    height: 70vh;
+}
+
+.book:hover {
+  animation: popOut 0.5s forwards;
+  z-index: 10;
+}
+
+.book:not(:hover) {
+  animation: popIn 0.5s forwards;
+}
+
+.album:hover {
+  animation: popOut 0.5s forwards;
+  z-index: 10;
+}
+
+.album:not(:hover) {
+  animation: popIn 0.5s forwards;
+}
+
+.caption {
+    font-size: 16px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: rgba(53, 24, 1, 0.871);
+    margin: 0.5px;
+}
+
+.titlecaption {
+    font-size: 22px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgba(53, 24, 1, 0.871);
+    margin: 5px;
+}
+
+.getlink {
+    font-size: 20px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    color: rgba(7, 140, 174, 0.871);
+    text-decoration: underline 1px;
+}
+
+@media (min-width: 768px) {
+.bookgallery {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+
+
+
+@keyframes popOut {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  60% {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  }
+  40% {
+    transform: scale(1.04);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.album {
+  width: 50vh;
+  height: 50vh;
+}
+
+.logo {
+  width: 30px;
+}
+
+.musiclogos {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.musiclogos li {
+  margin-left: 5px;
+}
+
+
+footer{
+    background-color: rgb(255, 255, 205);
+    color: rgb(81, 36, 1);
+    text-align: center;
+    height: 50px;
+}

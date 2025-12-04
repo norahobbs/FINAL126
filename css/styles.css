@@ -1,0 +1,185 @@
+.demo{
+    background-color: rgb(255, 255, 205);
+    color: rgb(81, 36, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 1;
+}
+
+.menu {
+    z-index: 20;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.button{
+    background-color: rgb(81, 36, 1);
+    color:  rgb(248, 248, 168);
+}
+
+.button:hover, .button:focus{
+    color: rgb(81, 36, 1);
+    background-color:  rgb(248, 248, 168);
+    text-decoration: underline;
+}
+
+.close{
+    color: rgb(81, 36, 1);
+    font-size: small;
+}
+
+.page-title {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    font-size: xx-large;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgba(53, 24, 1, 0.527);
+    margin-bottom: 0px;
+
+}
+.all{
+    display: block;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+}
+
+.headshot{
+    position: relative;
+    width: 70vw;
+    margin: 0;
+    display: block;
+}
+
+.textbox{
+    background-color: rgb(231, 231, 153);
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    height: auto;
+}
+
+.container{
+    width: 80%;
+    justify-self: center;
+    background-color: antiquewhite;
+}
+
+.photoandintro,
+.container {
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+
+button{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: rgb(76, 90, 108);
+}
+
+textarea, label{
+    padding: 10px 0px;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+#name{
+    width: 95%;
+}
+
+#email{
+    width: 95%;
+}
+
+#name:hover, #email:hover {
+  border-color:rgb(81, 36, 1);
+}
+
+#name, #email{
+  border: 2px solid  rgb(169, 169, 4);
+  outline: none;
+  transition: border-color 0.2 5s ease, box-shadow 0.25s ease;
+  background-color: white;
+}
+
+.submit{
+    width: 95%;
+    margin-top: 20px;
+    background-color: rgb(81, 36, 1);
+    color: rgb(248, 248, 168);
+}
+
+.submit:hover, 
+.submit:focus{
+    background-color: rgb(248, 248, 168);
+    color: rgb(81, 36, 1);
+}
+
+h3{
+    text-align: center;
+    color: rgb(81, 36, 1);
+}
+
+footer{
+    background-color: rgb(255, 255, 205);
+    color: rgb(81, 36, 1);
+    text-align: center;
+    height: 50px;
+}
+
+@media (min-width: 768px) {
+    .photoandintro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: stretch;
+    }
+
+    .headshot {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        align-self: center;
+        margin-bottom: -30px;
+    }
+
+    .textbox {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        height: auto;
+        padding: 25px;
+    }
+
+    .container {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        align-self: center;
+    }
+    .one, .two {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .submit {
+        grid-column: 1 / 3; 
+        width: 100%;
+    }
+    #contact-form {
+
+        justify-items: center; 
+    }
+}
+

@@ -1,0 +1,222 @@
+.demo{
+    background-color: rgb(255, 255, 205);
+    color: rgb(81, 36, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.button{
+    background-color: rgb(81, 36, 1);
+    color:  rgb(248, 248, 168);
+}
+.button:hover, .button:focus{
+    color: rgb(81, 36, 1);
+    background-color:  rgb(248, 248, 168);
+    text-decoration: underline;
+}
+
+.close{
+    color: rgb(81, 36, 1);
+    font-size: small;
+}
+
+.page-title {
+  
+    top: 80px;
+    width: 100%;
+    font-size: xx-large;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgba(53, 24, 1, 0.527);
+    margin-bottom: 0px;
+
+}
+.pink-box {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 20px solid rgb(255, 245, 250);
+  padding: 10px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pink-box h1 {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+
+.promo, .promotwo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.dragintro{
+    background-color: rgb(231, 231, 153);;
+    width: 70%;
+    justify-self: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.map{
+  display: block;
+}
+
+.justimg{
+    display: flex;
+}
+
+.imgmap{
+  flex: 2;
+  justify-content: center;
+}
+h2{
+    justify-self: center;
+}
+
+.wordsnexttomap ul {
+  column-count: 2;
+  column-gap: 20px;
+  list-style: none;
+}
+
+.watch{
+    background-color: rgb(233, 207, 150);
+    width: 90%;
+    justify-self: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttoninwatch{
+    background-color: rgb(237, 0, 126);
+    width: 70%;
+    border-radius: 5px;
+    margin: 10px;
+    justify-self: center;    
+}
+
+.buttoninwatch a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.buttoninwatch:hover, .buttoninwatch:focus{
+    background-color: rgb(141, 4, 77);;
+    text-decoration: underline 1px rgb(238, 0, 127);
+}
+
+.buttoninwatch a:hover, .buttoninwatch a:focus{
+    color: rgb(238, 0, 127);
+}
+
+.textunderbutton{
+    background-color: rgba(119, 63, 93, 0.585);
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.map img{
+    width: 80%;
+    justify-self: center;
+}
+
+
+@media (min-width: 768px) {
+  .pink-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    align-items: start;
+    justify-items: center;
+    width: 100%;
+    padding:20px;
+  }
+
+  .pink-box h1{
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  .promo, .promotwo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .watch{
+    width: 50%;
+  }
+
+  .buttoninwatch{
+    width: 70%;
+    justify-self: center;
+  }
+
+  .textunderbutton{
+    width: 70%;
+    justify-self: center;
+  }
+
+  .map {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  .justimg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgmap {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    grid-column: 1 / 2;
+  }
+
+  .wordsnexttomap {
+
+    padding: 10px;
+    margin:10px;
+    grid-column: 2 / 3;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  .wordsnexttomap ul {
+    column-count: 1;
+    list-style:circle;
+  }
+}
+
+
+footer{
+    background-color: rgb(255, 255, 205);
+    color: rgb(81, 36, 1);
+    text-align: center;
+    height: 50px;
+}
