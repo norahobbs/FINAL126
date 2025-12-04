@@ -181,19 +181,19 @@ h2{
   }
 
   .buttoninwatch{
-    width: 70%;
+    width: 100%;
     margin: 10px auto;
     justify-self: center;
   }
 
   .buttoninwatch a{
-    width: 70%;
+    width: 100%;
     display:block;
     padding: 10px 0;
   }
 
   .textunderbutton{
-    width: 70%;
+    width: 100%;
     margin: 10px auto;
     justify-self: center;
   }
