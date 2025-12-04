@@ -61,14 +61,13 @@ body{
   display: block;
 }
 
-.dragintro{
-    background-color: rgb(231, 231, 153);;
-    width: 70%;
-    justify-self: center;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+.dragintro {
+  background-color: rgb(231, 231, 153);
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .map{
@@ -93,28 +92,30 @@ h2{
   list-style: none;
 }
 
-.watch{
-    background-color: rgb(233, 207, 150);
-    width: 90%;
-    justify-self: center;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+.watch {
+  background-color: rgb(233, 207, 150);
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.buttoninwatch{
-    background-color: rgb(237, 0, 126);
-    width: 100%;
-    border-radius: 5px;
-    margin: 10px;
-    justify-self: center;
-    align-self: center;    
+
+.buttoninwatch {
+  background-color: rgb(237, 0, 126);
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 .buttoninwatch a{
     color: rgb(255, 255, 255);
     text-decoration: none;
+    width: 100%;
+    display:block;
+    padding: 10px 0;
 }
 .buttoninwatch:hover, .buttoninwatch:focus{
     background-color: rgb(141, 4, 77);;
@@ -125,13 +126,13 @@ h2{
     color: rgb(238, 0, 127);
 }
 
-.textunderbutton{
-    background-color: rgba(119, 63, 93, 0.585);
-    width: 100%;
-    border-radius: 5px;
-    margin: 10px;
-    color: rgb(255, 255, 255);
-
+.textunderbutton {
+  background-color: rgba(119, 63, 93, 0.585);
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  color: white;
 }
 
 .map img{
