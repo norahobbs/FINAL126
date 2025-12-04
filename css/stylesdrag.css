@@ -62,6 +62,7 @@ body{
 }
 
 .dragintro {
+  display:flex;
   background-color: rgb(231, 231, 153);
   width: 70%;
   margin: 20px auto;
