@@ -182,12 +182,12 @@ h2{
 
   .buttoninwatch{
     width: 70%;
-    justify-self: center;
+    margin: 10px auto;
   }
 
   .textunderbutton{
     width: 70%;
-    justify-self: center;
+    margin: 10px auto;
   }
 
   .map {
